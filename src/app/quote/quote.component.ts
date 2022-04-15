@@ -13,6 +13,14 @@ export class QuoteComponent implements OnInit {
     new Quote("Nick","Nelson Mandela","The greatest glory in living lies not in never falling, but in rising every time we fall.",353,10, new Date(2012,12,12))
   ];
 
+addNewQuote(quote:any){
+  let quoteLength = this.quotes.length;
+  quote.id = quoteLength+1;
+
+  this.quotes.push(quote);
+}
+
+
 
   constructor() { }
 
