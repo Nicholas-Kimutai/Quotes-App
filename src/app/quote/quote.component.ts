@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Quote } from '../quote';
 
 @Component({
   selector: 'app-quote',
@@ -11,6 +12,7 @@ export class QuoteComponent implements OnInit {
     new Quote("Nick","Henry David Thoreau","Go confidently in the direction of your dreams! Live the life you've imagined.",309,5,new Date(2021,6,17)),
     new Quote("Nick","Nelson Mandela","The greatest glory in living lies not in never falling, but in rising every time we fall.",353,10, new Date(2012,12,12))
   ];
+
 
   constructor() { }
 
