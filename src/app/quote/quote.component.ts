@@ -20,6 +20,16 @@ addNewQuote(quote:any){
   this.quotes.push(quote);
 }
 
+deleteQuote(isComplete:any,index:any){
+  if(isComplete){
+    let toDelete = confirm(`Are you sure you want to delete a quote by ${this.quotes[index].author}?`)
+    if(toDelete){
+      this.quotes.splice(index,1);
+    }
+  }
+
+}
+
 
 
   constructor() { }
