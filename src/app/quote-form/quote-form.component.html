@@ -18,6 +18,13 @@
                <p>Author is required</p>
            </div>
         </div>
+        <div class="form-group">
+            <label for="name">Submitted By:</label>
+            <input type="text" id="name" [(ngModel)]="newQuote.name" name="name" #name='ngModel' class="form-control" required>
+           <div [hidden] = "name.valid || name.pristine" class ="alert alert-danger">
+               <p>Name is required</p>
+           </div>
+        </div>
     </form>
 
 </div>
