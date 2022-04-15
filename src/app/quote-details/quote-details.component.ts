@@ -20,6 +20,11 @@ export class QuoteDetailsComponent implements OnInit {
     like++;
     this.quote.likes = like;
   }
+  incrementDislikes(){
+    let dislike = this.quote.dislikes;
+    dislike++;
+    this.quote.dislikes = dislike;
+  }
 
   constructor() { }
 
