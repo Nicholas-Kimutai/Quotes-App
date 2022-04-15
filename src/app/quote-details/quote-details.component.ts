@@ -15,6 +15,11 @@ export class QuoteDetailsComponent implements OnInit {
   quoteDelete(complete:boolean){
     this.isComplete.emit(complete);
   }
+  incrementLikes(){
+    let like = this.quote?.likes;
+    like++;
+    this.quote.likes = like;
+  }
 
   constructor() { }
 
