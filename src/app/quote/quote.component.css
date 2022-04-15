@@ -1,9 +1,10 @@
-*{
-    background-color:darkslategrey;
-}
+ .header,.container{
+     background-color:gainsboro;
+ }
 h1{
     text-align: center;
     color: black;
+    text-decoration: underline;
 }
 p{
     text-align: center;
